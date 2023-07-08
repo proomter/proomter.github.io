@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fastapi-architecture-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -462,9 +467,38 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fastapi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Fastapi
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-architecture-design" class="md-nav__link">
+    fastapi architecture design
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1021,6 +1055,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-architecture-design" class="md-nav__link">
+    fastapi architecture design
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1039,7 +1088,27 @@
 
   <h1>Fastapi</h1>
 
-
+<h3 id="fastapi-architecture-design">fastapi architecture design</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>As a FastAPI developer, you are assigned to develop and optimize a FastAPI application, ensuring its performance, scalability, and maintainability.
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>To ensure high performance, you plan to utilize FastAPI&#39;s asynchronous capabilities. By using async and await keywords in your route functions, you aim to develop non-blocking code, making the app capable of handling more requests per second.
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>Scalability is achieved through a well-structured and modular codebase. FastAPI&#39;s dependency injection system is leveraged to manage resources like database connections. This ensures that resources are efficiently used and makes the code easier to test and maintain.
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>Maintainability is ensured through clear code structuring and the use of Pydantic models for data validation and serialization. Pydantic models enforce type checking, making your code more robust and easier to debug.
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>To further optimize your FastAPI application, you plan to use Starlette&#39;s middleware and plugins for tasks like GZip compression, CORS handling, and HTTP caching, reducing the payload size and improving the request handling process.
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>You will use Tortoise-ORM or SQLAlchemy for handling database operations, providing an additional layer of security against SQL Injection attacks. This also allows switching between different database systems with less effort.
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>For ensuring the application&#39;s robustness and preventing regressions, you&#39;ll utilize Pytest for writing extensive unit tests.
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>On the frontend, you can use FastAPI&#39;s automatic generation of OpenAPI and JSON Schema definitions. This improves collaboration with frontend developers and also provides automatic interactive API documentation.
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>Lastly, to deploy the application, you will containerize it using Docker, making it easy to deploy anywhere and ensuring consistent behavior across different environments.
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>As a FastAPI developer, you are ready to leverage its features, building a highly performant, scalable, and maintainable application.
+</code></pre></div></td></tr></table></div>
 
 
   
